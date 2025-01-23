@@ -27,7 +27,7 @@ public class UserService {
         if (existingUser == null || !existingUser.getPassword().equals(password)) {
             return "Invalid username or password";
         }
-        return "Login successful!";
+        return "Welcome, " + existingUser.getUsername() + "!";
     }
 
     public List<User> getUsers() {
